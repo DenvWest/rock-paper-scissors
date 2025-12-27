@@ -12,10 +12,19 @@ function getComputerChoice() {
 
 function getHumanChoice() {
   const input = prompt("Rock, paper or scissors?");
-  return input.toLowerCase();
+  return input.toLowerC
+  ase();
+}
+
+function playRound(humanChoice, computerChoice) {
+  
+  
+  console.log("Human:", humanChoice);
+  console.log("Computer:", computerChoice);
 }
 
 
+console.log("After test:", humanScore, computerScore);
 console.log("Scores bij start:", humanScore, computerScore);
 
 console.log(getComputerChoice());
@@ -23,3 +32,6 @@ console.log(getComputerChoice());
 console.log(getComputerChoice());
 
 console.log(getHumanChoice());
+playRound("paper", "rock");
+
+
